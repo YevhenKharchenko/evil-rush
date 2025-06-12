@@ -1,20 +1,18 @@
 .play-section {
-  padding-top: 80px;
-  padding-bottom: 403px;
+  padding-bottom: 46px;
   max-width: 375px;
   margin: 0 auto;
   position: relative;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
     max-width: 1440px;
   }
 }
 
-.play-container {
+.play-list-wrapper {
   @include media(desktop) {
-    padding-right: 291px;
+    padding-left: 184px;
   }
 }
 
@@ -24,52 +22,42 @@
   gap: 16px;
 
   @include media(desktop) {
-    align-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 24px;
+    max-width: 552px;
   }
 }
 
 .play-list-item {
+  border: 4px solid #a354ba;
+  border-radius: 8px;
+  padding: 16px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   gap: 8px;
+  min-height: 202px;
+
+  @include media(desktop) {
+    max-width: 264px;
+  }
 }
 
 .play-item-number {
-  background: #fff;
-  border-radius: 25px;
-  display: flex;
-  min-width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
   line-height: 1.5;
   color: #000;
 }
 
-.play-item-text-wrapper {
-  box-shadow: 5px -5px 0 0 rgba(255, 255, 255, 0.25);
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px 16px;
-  max-width: 278px;
-
-  @include media(desktop) {
-    width: 528px;
-    max-width: 528px;
-  }
-}
-
 .play-item-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
   color: #000;
-  margin-bottom: 8px;
 
   @include media(desktop) {
     font-size: 20px;
@@ -77,8 +65,8 @@
 }
 
 .play-item-text {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #000;
@@ -88,23 +76,34 @@
   }
 }
 
-.play-bubbles-img {
-  position: absolute;
-  top: 0;
-  right: 19px;
+.play-fireball-img {
+  display: none;
 
   @include media(desktop) {
-    right: 180px;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 220px;
   }
 }
 
 .play-girl-img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: none;
 
   @include media(desktop) {
-    left: 372px;
+    display: flex;
+    position: absolute;
+    bottom: 72px;
+    right: 180px;
   }
+}
+
+.play-bottom-line-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: none;
+  bottom: 0;
+  display: flex;
+  z-index: 0;
 }

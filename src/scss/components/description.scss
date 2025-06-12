@@ -1,28 +1,26 @@
-.description-bg-wrapper {
-  padding-top: 60px;
+.description-section {
+  padding-top: 80px;
   padding-bottom: 80px;
-  max-width: 375px;
-  margin: 0 auto;
-  position: relative;
+  scroll-margin-top: 10px;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    max-width: 1440px;
+    scroll-margin-top: 0px;
+    padding-top: 125px;
+    padding-bottom: 150px;
   }
 }
 
-.description-container {
-}
-
 .description-text {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #fff;
+  color: #000;
   word-break: break-word;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   @include media(desktop) {
     font-size: 20px;
@@ -31,13 +29,6 @@
   }
 }
 
-.description-bubbles-img {
-  position: absolute;
-  top: 26px;
-  left: 20px;
-
-  @include media(desktop) {
-    top: 75px;
-    left: 180px;
-  }
+.description-span {
+  font-weight: 700;
 }

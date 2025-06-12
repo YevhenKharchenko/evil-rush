@@ -1,0 +1,50 @@
+.download-section {
+  padding-bottom: 255px;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-bottom: 184px;
+  }
+}
+
+.download-container {
+  @include media(desktop) {
+    padding-left: 364px;
+  }
+}
+
+.download-title {
+  margin-bottom: 16px;
+}
+
+.download-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.download-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -18px;
+  display: flex;
+  z-index: 1;
+
+  @include media(desktop) {
+    bottom: -22px;
+    left: auto;
+    transform: none;
+    right: 364px;
+  }
+}

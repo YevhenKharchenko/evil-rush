@@ -1,87 +1,78 @@
 .hero-section {
-  padding-top: 141px;
-  padding-bottom: 358px;
+  padding-top: 95px;
+  padding-bottom: 495px;
   background-image: url(../img/hero/hero-title-bg-mob.png),
-    url(../img/hero/hero-bg-mob.jpg);
+    url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: top 60px center, top center;
+  background-position: top 116px center, top center;
   background-size: auto, auto;
   max-width: 375px;
   margin: 0 auto;
   position: relative;
 
   @include media(desktop) {
-    padding-top: 426px;
-    padding-bottom: 433px;
+    padding-top: 117px;
+    padding-bottom: 548px;
     background-image: url(../img/hero/hero-title-bg-desk.png),
-      url(../img/hero/hero-bg-desk.jpg);
-    background-position: top 340px center, top center;
+      url(../img/hero/hero-bg-desk.png);
+    background-position: top 143px left 119px, top center;
     max-width: 1440px;
   }
 }
 
 .hero-title {
-  font-family: 'Quando', sans-serif;
+  font-family: 'Alfa Slab One', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
-  max-width: 251px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #000;
   margin-bottom: 16px;
 
   @include media(desktop) {
+    text-align: left;
     font-size: 40px;
-    max-width: 561px;
-    margin-bottom: 31px;
   }
 }
 
 .hero-text {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
-  max-width: 251px;
+  color: #000;
+  max-width: 294px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     font-size: 20px;
-    max-width: 561px;
+    max-width: 584px;
+    text-align: left;
+    margin-left: 0;
   }
 }
 
-.hero-girl-img {
+.hero-img {
   position: absolute;
-  bottom: 0;
+  right: 0;
+  bottom: 34px;
+  display: flex;
+  z-index: 1;
+
+  @include media(desktop) {
+    bottom: 32px;
+    right: 73px;
+  }
+}
+
+.hero-bottom-line-img {
+  position: absolute;
   left: 0;
-
-  @include media(desktop) {
-  }
-}
-
-.hero-diver-img {
-  position: absolute;
-  top: 0;
   right: 0;
-
-  @include media(desktop) {
-    top: 164px;
-  }
-}
-
-.hero-dog-img {
-  position: absolute;
-  bottom: 25px;
-  right: 0;
-
-  @include media(desktop) {
-    bottom: 81px;
-    right: 197px;
-  }
+  transform: none;
+  bottom: 0;
+  display: flex;
+  z-index: 0;
 }
